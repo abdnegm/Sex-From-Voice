@@ -42,34 +42,6 @@ def fund(x, f_s):
 ##########
 # helpers
 ##########
-def k_to_hz(k, N, f_s):
-    """
-    Convert DFT coefficient k to frequency f given N and f_s.
-
-    Args:
-        k (int): DFT coefficient to convert
-        N (int): number of samples
-        f_s (int or float): sample rate
-
-    Returns:
-        float: frequency f corresponding to DFT coefficient k
-    """
-    return k/N*f_s
-
-def hz_to_k(f, N, f_s):
-    """
-    Convert frequency f to DFT coefficient k given N and f_s.
-
-    Args:
-        f (int or float): frequency to convert
-        N (int): number of samples
-        f_s (int or float): sample rate
-
-    Returns:
-        float: DFT coefficient k corresponding to frequency f
-    """
-    return f/f_s*N
-
 def cepstrum(x):
     """
     Returns the cepstrum of a signal x.
